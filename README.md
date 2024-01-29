@@ -1,5 +1,5 @@
 # Example
-![example]('https://imgur.com/2c0GXsK')
+![example]('https://i.imgur.com/2c0GXsK.png')
 
 # Starting
 1. Download the repository to your computer.
