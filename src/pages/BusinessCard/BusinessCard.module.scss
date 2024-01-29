@@ -9,3 +9,9 @@
     @include circle(var(--hk-spacing-8));
     @include flex(column, flex-start, var(--hk-spacing-8))
 }
+
+@media screen and (max-width: 696px) {
+    .block {
+        width: calc(100vw - 94px);
+    }
+}

@@ -4,7 +4,7 @@
     background: var(--hk-background-base);
     position: fixed;
     width: 100vw;
-    height: 100dvh;
+    height: 100vh;
     opacity: 1;
     z-index: 1;
     @include flex(column, center, var(--hk-spacing-2), center);
@@ -31,6 +31,12 @@
         border-radius: 36px;
         background-color: var(--hk-color-primary);
         animation: line linear infinite 1.5s;
+    }
+}
+
+@supports(height: 100dvh) {
+    .wrapper {
+        height: 100dvh;
     }
 }
 

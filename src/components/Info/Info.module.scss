@@ -30,3 +30,9 @@
         }
     }
 }
+
+@media screen and (max-width: 696px) {
+    .info .content {
+        max-width: 65%;
+    }
+}

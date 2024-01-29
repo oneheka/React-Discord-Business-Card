@@ -1,9 +1,11 @@
 @import '../../assets/scss/util/mixins.scss';
 
 .footer {
+    z-index: -1;
     @include block-x-center(64px);
 
     .text {
+        text-align: center;
         @include text(14, 700, var(--hk-color-primary))
     }
 

@@ -42,8 +42,6 @@ export default class App extends Component {
 
         document.getElementById('title').innerText = getNickname(data.discord_user)
         document.getElementById('icon').href = getAvatar(data.discord_user)
-
-        return this.setState({ data })
     }
 
     async getData() {

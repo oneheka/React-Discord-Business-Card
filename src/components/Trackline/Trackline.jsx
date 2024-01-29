@@ -14,7 +14,7 @@ export default class Trackline extends Component {
                 <div className={styles.line} ref={this.state.ref}>
                     <div
                     className={styles.highlighted}
-                    style={{ width: `${this.state.lineWidth}px` }}
+                    style={{ width: this.state.lineWidth }}
                     ></div>
                 </div>
                 <p className={styles.time}>
