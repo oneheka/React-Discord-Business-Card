@@ -1,0 +1,15 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.spotify {
+    align-self: stretch;
+    @include flex(column, flex-start, var(--hk-spacing-2));
+
+    .listening {
+        @include text(16, 700, var(--hk-color-primary))
+    }
+
+    .song {
+        align-self: stretch;
+        @include flex(column, flex-start, var(--hk-spacing-4));
+    }
+}

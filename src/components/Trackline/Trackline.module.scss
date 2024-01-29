@@ -1,0 +1,24 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.trackline {
+    align-self: stretch;
+    @include flex(row, center, var(--hk-spacing-1));
+
+    .time {
+        @include text(8, 700, var(--hk-color-primary))
+    }
+
+    .line {
+        border-radius: var(--hk-spacing-1);
+        width: 100%;
+        height: 2px;
+        overflow: hidden;
+        background: var(--hk-color-complementary);
+
+        .highlighted {
+            border-radius: var(--hk-spacing-1);
+            height: 2px;
+            background: var(--hk-color-primary);
+        }
+    }
+}

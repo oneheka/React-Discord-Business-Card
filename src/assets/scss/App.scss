@@ -1,0 +1,18 @@
+@import './index.scss';
+
+:root {
+    @include g-variables-fallback;
+}
+
+* {
+    margin: 0;
+    transition: background .2s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:var(--hk-background-base);
+}

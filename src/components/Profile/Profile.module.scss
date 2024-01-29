@@ -1,0 +1,10 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.profile {
+    align-self: stretch;
+    @include flex(row, center, var(--hk-spacing-0), space-between);
+
+    .buttons {
+        @include flex(column, flex-start, var(--hk-spacing-1));
+    }
+}

@@ -1,0 +1,15 @@
+@mixin variables {
+    --hk-spacing-1: 4px;
+
+    --hk-spacing-0: calc(var(--hk-spacing-1) * 0);
+    --hk-spacing-half: calc(var(--hk-spacing-1) / 2);
+    --hk-spacing-2: calc(var(--hk-spacing-1) * 2);
+    --hk-spacing-3: calc(var(--hk-spacing-1) * 3);
+    --hk-spacing-4: calc(var(--hk-spacing-1) * 4);
+    --hk-spacing-5: calc(var(--hk-spacing-1) * 5);
+    --hk-spacing-6: calc(var(--hk-spacing-1) * 6);
+    --hk-spacing-7: calc(var(--hk-spacing-1) * 7);
+    --hk-spacing-8: calc(var(--hk-spacing-1) * 8);
+    --hk-spacing-9: calc(var(--hk-spacing-1) * 9);
+    --hk-spacing-10: calc(var(--hk-spacing-1) * 10);
+}

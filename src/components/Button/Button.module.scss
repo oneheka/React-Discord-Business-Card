@@ -1,0 +1,24 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.button {
+    cursor: pointer;
+    background: var(--hk-button-base);
+    border-radius: var(--hk-spacing-3);
+    padding: var(--hk-spacing-2);
+    transition: .2s;
+    @include flex(row, center, var(--hk-spacing-1), center);
+
+    .icon {
+        color: var(--hk-color-primary);
+        text-decoration: none;
+        @include box(var(--hk-spacing-5));
+    }
+
+    &:hover {
+        background: var(--hk-button-hover);
+    }
+
+    &:active {
+        background: var(--hk-button-active);
+    }
+}

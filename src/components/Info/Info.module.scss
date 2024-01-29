@@ -1,0 +1,32 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.info {
+    @include flex(row, center, var(--hk-spacing-3));
+
+    .image {
+        user-select: none;
+        overflow: hidden;
+        @include circle(var(--hk-spacing-2));
+        @include flex(row, center, var(--hk-spacing-0), center);
+
+        img {
+            @include box(76px);
+        }
+    }
+
+    .content {
+        max-width: 80%;
+        @include flex(column);
+
+        .title {
+            @include text(24, 700, var(--hk-color-primary));
+            @include text-hidden();
+        }
+
+        .description {
+            cursor: pointer;
+            @include text(14, 400, var(--hk-color-complementary));
+            @include text-hidden();
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    background: var(--hk-color-brand);
+    padding: var(--hk-spacing-1, --hk-spacing-half);
+    border-radius: var(--hk-spacing-1);
+    transform: translateX(-50%);
+
+    .text {
+        @include text(10, 400, var(--hk-color-white))
+    }
+}
+
+.open {
+    opacity: 1;
+    animation: open 0.08s linear;
+}
+
+.close {
+    opacity: 0;
+    animation: close 0.08s linear;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes close {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

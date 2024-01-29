@@ -1,0 +1,6 @@
+@use './variables/spacing.scss';
+@use './variables/themes.scss';
+
+@mixin g-variables-fallback {
+    @include spacing.variables
+}

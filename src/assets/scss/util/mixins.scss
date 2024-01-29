@@ -1,0 +1,55 @@
+@import "./functions.scss";
+
+@mixin text($fs, $fw, $style, $lh: normal) {
+    font-family: 'Space Mono', 'Mulish';
+    font-size: toRem($fs);
+    font-weight: $fw;
+    color: $style;
+    line-height: $lh;
+    user-select: none;
+}
+
+@mixin flex($dr, $ai: flex-start, $gp: var(--g-spacing-0), $jc: flex-start) {
+    display: flex;
+    flex-direction: $dr;
+    align-items: $ai;
+    gap: $gp;
+    justify-content: $jc;
+}
+
+@mixin box($sz) {
+    width: $sz;
+    height: $sz;
+}
+
+@mixin padding-width($pd, $wd) {
+    padding: $pd;
+    width: calc($wd - ($pd * 2));
+}
+
+@mixin circle($br: 100%) {
+    border-radius: $br;
+}
+
+@mixin text-hidden() {
+    display: -webkit-box;
+    align-self: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin block-center($top: 50%) {
+    position: fixed;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin block-x-center($btm: 0) {
+    position: fixed;
+    left: 50%;
+    bottom: $btm;
+    transform: translateX(-50%);
+}

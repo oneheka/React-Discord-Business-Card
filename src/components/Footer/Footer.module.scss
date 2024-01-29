@@ -1,0 +1,13 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.footer {
+    @include block-x-center(64px);
+
+    .text {
+        @include text(14, 700, var(--hk-color-primary))
+    }
+
+    span {
+        color: var(--hk-color-brand)
+    }
+}
