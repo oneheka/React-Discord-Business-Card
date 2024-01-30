@@ -34,16 +34,16 @@
     }
 }
 
-@supports(height: 100dvh) {
-    .wrapper {
-        height: 100dvh;
-    }
-}
-
 .hide {
     animation: hide .75s linear;
     z-index: -1;
     opacity: 0;
+}
+
+@supports(height: 100dvh) {
+    .wrapper {
+        height: 100dvh;
+    }
 }
 
 @keyframes hide {

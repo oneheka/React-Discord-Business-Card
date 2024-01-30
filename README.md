@@ -4,7 +4,8 @@
 # Starting
 1. Download the repository to your computer.
 2. Join the [lanyard](https://discord.gg/UrXF2cfJ7F) server, as this business card is based on their [API](https://github.com/phineas/lanyard).
-3. Fill in the `src/config.js` file with id, github url and default theme.
+3. Install the npm packages via the `npm install` command
+4. Fill in the `src/config.js` file with id, github url and default theme.
 
 # Start the application
 To run the application, type `npm run start` in the console.
