@@ -1,5 +1,5 @@
 # Example
-<img src='https://i.imgur.com/I8lRbat.png' alt='example' />
+<img src='https://i.imgur.com/bv7pfV5.png' alt='example' />
 
 # Starting
 1. Download the repository to your computer.
