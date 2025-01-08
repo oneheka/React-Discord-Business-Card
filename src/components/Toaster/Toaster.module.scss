@@ -1,0 +1,49 @@
+@import '../../assets/scss/util/mixins.scss';
+
+.toaster {
+    position: fixed;
+    right: var(--hk-spacing-4);
+    bottom: var(--hk-spacing-4);
+    border-radius: var(--hk-spacing-4);
+    background: var(--hk-profile-base);
+    animation: toasterShow 2.2s backwards cubic-bezier(0,0,0,1);
+    @include outline();
+    @include flex(column, flex-start, var(--hk-spacing-3));
+    @include padding-width(var(--hk-spacing-6), calc(var(--hk-spacing-10) * 8));
+
+    .top {
+        width: 100%;
+        @include flex(row, center, var(--hk-spacing-0), space-between);
+
+        .title {
+            @include text(16, 600, var(--hk-color-primary));
+        }
+    }
+}
+
+.toaster__closed {
+    animation: toasterClose 1s cubic-bezier(.8,-.2,.7,.8);
+    transform: translateY(calc(var(--hk-spacing-10) * 10));
+}
+
+@keyframes toasterShow {
+    from {
+        transform: translateY(calc(var(--hk-spacing-10) * 10));
+    }
+}
+
+@keyframes toasterClose {
+    0% {
+        transform: translateY(0)
+    }
+
+    90% {
+        transform: translateY(calc(var(--hk-spacing-10) * 10))
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .toaster {
+        @include padding-width(var(--hk-spacing-6), calc(100% - var(--hk-spacing-4) * 2));
+    }
+}

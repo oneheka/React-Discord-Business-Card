@@ -4,9 +4,9 @@ import { Button, Info } from "../index";
 import { github } from "../../config";
 import styles from "./Profile.module.scss"
 
+import { ReactComponent as IconGitHub } from "../../assets/svg/GitHub.svg";
 import { ReactComponent as IconLight } from "../../assets/svg/Light.svg";
 import { ReactComponent as IconDark } from "../../assets/svg/Dark.svg";
-import { ReactComponent as IconGitHub } from "../../assets/svg/GitHub.svg";
 
 export default class Profile extends Component {
     render() {

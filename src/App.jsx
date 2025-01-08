@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { id, theme as defaultTheme } from "./config";
+import { id, theme as defaultTheme, toaster } from "./config";
 import { Component } from "react";
 
-import { Circle, Footer, Loading } from "./components";
+import { Circle, Footer, Loading, Toaster } from "./components";
 import { BusinessCard, NotFound } from "./pages";
 import { getAvatar, getNickname } from "./util";
 import "./assets/scss/App.scss";
@@ -20,8 +20,9 @@ export default class App extends Component {
                         <BusinessCard updateTheme={this.updateTheme.bind(this)} data={this.state.data} getData={this.getData.bind(this)} />
                     } />
                     <Route path='*' element={<NotFound />} />
-                </Routes>
-                <Footer username={this.state?.data?.discord_user?.username} />
+                    </Routes>
+                <Footer username={this.state?.data?.discord_user?.username}/>
+                { toaster.enabled && <Toaster data={toaster} hide={!this.state?.data}/> }
            </BrowserRouter>
         )
     }
@@ -42,6 +43,8 @@ export default class App extends Component {
 
         document.getElementById('title').innerText = getNickname(data.discord_user)
         document.getElementById('icon').href = getAvatar(data.discord_user)
+
+        return this.setState({ data })
     }
 
     async getData() {

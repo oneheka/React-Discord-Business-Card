@@ -2,7 +2,8 @@
 
 .footer {
     z-index: -1;
-    @include block-x-center(64px);
+    animation: toTop 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    @include block-x-center(calc(var(--hk-spacing-8) * 2));
 
     .text {
         text-align: center;
@@ -11,5 +12,17 @@
 
     span {
         color: var(--hk-color-brand)
+    }
+}
+
+@keyframes toTop {
+    0% {
+        position: fixed;
+        bottom: calc(var(--hk-spacing-10) * -1);
+    }
+
+    100% {
+        position: fixed;
+        bottom: none;
     }
 }

@@ -5,9 +5,10 @@
     background: var(--hk-profile-base);
     backdrop-filter: blur(var(--hk-spacing-8));
     padding: var(--hk-spacing-8);
+    @include outline();
     @include block-center();
     @include circle(var(--hk-spacing-8));
-    @include flex(column, flex-start, var(--hk-spacing-8))
+    @include flex(column, flex-start, var(--hk-spacing-8));
 }
 
 @media screen and (max-width: 696px) {

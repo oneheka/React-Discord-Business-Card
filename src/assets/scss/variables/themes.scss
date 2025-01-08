@@ -8,9 +8,11 @@
     --hk-profile-base: rgba(255, 255, 255, 0.5);
     --hk-color-primary: rgba(58, 58, 58, 1);
     --hk-color-complementary: rgba(110, 115, 125, 1);
+    --hk-color-button: rgba(17, 20, 28, 1);
     --hk-button-base: rgba(255, 255, 255, 1);
     --hk-button-hover: rgba(240, 240, 240, 1);
     --hk-button-active: rgba(230, 230, 230, 1);
+    --hk-color-outline: rgba(0, 0, 0, 0.15);
 }
 
 [data-theme="dark"] {
@@ -21,4 +23,5 @@
     --hk-button-base: rgba(17, 20, 28, 1);
     --hk-button-hover: rgba(14, 17, 25, 1);
     --hk-button-active: rgba(16, 20, 31, 1);
+    --hk-color-outline: rgba(255, 255, 255, 0.15);
 }

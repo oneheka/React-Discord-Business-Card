@@ -1,5 +1,5 @@
-import { Component } from "react";
 import { Profile, Spotify } from "../../components";
+import { Component } from "react";
 import styles from "./BusinessCard.module.scss";
 
 class BusinessCard extends Component {

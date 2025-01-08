@@ -9,7 +9,7 @@
     user-select: none;
 }
 
-@mixin flex($dr, $ai: flex-start, $gp: var(--g-spacing-0), $jc: flex-start) {
+@mixin flex($dr, $ai: flex-start, $gp: var(--hk-spacing-0), $jc: flex-start) {
     display: flex;
     flex-direction: $dr;
     align-items: $ai;
@@ -52,4 +52,9 @@
     left: 50%;
     bottom: $btm;
     transform: translateX(-50%);
+}
+
+@mixin outline($sz: calc(var(--hk-spacing-half) / 2), $color: var(--hk-color-outline)) {
+    outline: $sz solid $color;
+    outline-offset: calc($sz * -1);
 }

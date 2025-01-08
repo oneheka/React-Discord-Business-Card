@@ -6,6 +6,7 @@
     border-radius: var(--hk-spacing-3);
     padding: var(--hk-spacing-2);
     transition: .2s;
+    @include outline();
     @include flex(row, center, var(--hk-spacing-1), center);
 
     .icon {
@@ -14,11 +15,20 @@
         @include box(var(--hk-spacing-5));
     }
 
+    .text {
+        @include text(14, 400, var(--hk-color-primary));
+    }
+
     &:hover {
         background: var(--hk-button-hover);
     }
 
     &:active {
         background: var(--hk-button-active);
+        transform: scale(0.95);
     }
+}
+
+.button__max {
+    @include padding-width(var(--hk-spacing-2), 100%)
 }

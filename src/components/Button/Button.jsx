@@ -4,8 +4,9 @@ import styles from "./Button.module.scss";
 export default class Button extends Component {
     render() {
         return (
-            <div className={styles.button} onClick={this.onClick.bind(this)}>
+            <div className={`${styles.button} ${this.props.width === 'max' ? styles.button__max : ''}`} onClick={this.onClick.bind(this)}>
                 { this.props.icon && <this.props.icon className={styles.icon} /> }
+                { this.props.text && <p className={styles.text}>{this.props.text}</p> }
             </div>
         )
     }
@@ -14,7 +15,7 @@ export default class Button extends Component {
         if(this.props.onClick) {
             this.props.onClick()
         } else if(this.props.href) {
-            window.location.href = this.props.href
+            window.open(this.props.href)
         }
     }
 }

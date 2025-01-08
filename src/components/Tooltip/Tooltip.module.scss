@@ -16,17 +16,20 @@
 
 .open {
     opacity: 1;
+    visibility: visible;
     animation: open 0.08s linear;
 }
 
 .close {
     opacity: 0;
+    visibility: hidden;
     animation: close 0.08s linear;
 }
 
 @keyframes open {
     from {
         opacity: 0;
+        visibility: visible;
     }
 
     to {
@@ -37,9 +40,11 @@
 @keyframes close {
     from {
         opacity: 1;
+        visibility: visible;
     }
 
     to {
         opacity: 0;
+        visibility: hidden;
     }
 }
