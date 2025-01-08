@@ -6,6 +6,7 @@
     .image {
         user-select: none;
         overflow: hidden;
+        @include outline();
         @include circle(var(--hk-spacing-2));
         @include flex(row, center, var(--hk-spacing-0), center);
 
